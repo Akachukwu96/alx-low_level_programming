@@ -5,9 +5,9 @@
  * _abs - a fuction that computes the absolute value of an integer
  * @x: integer input
  *
- * Return: Always 0
+ * Return: Absolute value
  */
 int _abs(int x)
 {
-	return (0);
+	return (x * ((x > 0) - (x < 0)));
 }
