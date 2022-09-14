@@ -2,13 +2,14 @@
 
 
 /**
- * add - a function that adds two numbers and returns result
+ * add - a function that add two integers and returns result
  * @x: first number input
- * @y: second number inpur
+ * @y: second number input
  *
- * Return: x + y
+ * Return: result x + y
  */
 int add(int x, int y)
 {
+
 	return (x + y);
 }
