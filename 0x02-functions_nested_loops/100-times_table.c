@@ -4,9 +4,7 @@
 /**
  * print_times_table - a function that prints the n times table
  *
- * @n: number times table (0 < n <= 15)
- *
- * Return: nothing
+ * @n: number times table
  */
 void print_times_table(int n)
 {
@@ -39,7 +37,7 @@ void print_times_table(int n)
 					_putchar((op % 10) + '0');
 				} else if (op >= 100)
 				{
-					_putchar(' ');
+					_putchar(',');
 					_putchar(' ');
 					_putchar((op / 100) + '0');
 					_putchar(((op / 10) % 10) + '0');
