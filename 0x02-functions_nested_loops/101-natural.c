@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main  computes and prints the sum of all the multiples
- * of 3 0r 5 below 1024
+ * main - computes and prints the sum of all the multiples of 3 0r 5 below 1024
  *
  * Return: Always 0 (Success_)
  */
@@ -23,7 +22,7 @@ int main(void)
 			sum3 = sum3 + i;
 		} else if ((i % 5) == 0)
 		{
-			sum5 = sum5 + 1;
+			sum5 = sum5 + i;
 		}
 	}
 	sum = sum3 + sum5;
