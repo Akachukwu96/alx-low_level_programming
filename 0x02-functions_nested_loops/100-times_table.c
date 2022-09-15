@@ -2,14 +2,47 @@
 
 
 /**
- * print_times_table - a function that prints the n times table, starting with 0
- * rone = row, cone = column, d = digits of current result
- * Return: times table
- * add extra space past single digit
+ * print_times_table - a function that prints the n times table
+ *
+ * @n: number times table (0 < n <= 15)
+ *
+ * Return: nothing
  */
 void print_times_table(int n)
 {
-	int rone, cone, d;
 
-	return (0);
+	int a, b, op;
+
+	if (n >= 0 && n <= 15)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			_putchar('0');
+			for (b = 1; b <= n; b++)
+			{
+				op = a * b;
+				_putchar(',');
+				_putchar(' ');
+				if (op <= 9)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(op + '0');
+				}
+				else if (op <= 99)
+				{
+					_putchar(' ');
+					_putchar((op / 10) + '0');
+					_putchar((op % 10) + '0');
+				}
+				else
+				{
+					_putchar(((op / 100) % 10) + '0');
+					_putchar(((op / 10) % 10) + '0');
+					_putchar((op % 10) + '0');
+				}
+			}
+		}
+	}
+
 }
