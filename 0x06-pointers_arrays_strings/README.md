@@ -24,4 +24,7 @@ Prototype: char *cap_string(char *).
 
 7. Write a function that encodes a string into 1337.
 
+8. rot13 - Write a function that encodes a string using rot13 with 
+Prototype: char *rot13(char *).
+
 ## Resource Links: Man pages.
