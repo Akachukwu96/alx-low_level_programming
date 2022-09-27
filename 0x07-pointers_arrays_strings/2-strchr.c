@@ -2,12 +2,12 @@
 
 
 /**
- * _strchr - Locates a character in a string
- * @s: String input
- * @c: Character to be found
+ * _strchr - locates a character in a string
+ * @s: source string
+ * @c: character to find
  *
- * Return:NULL if c is not found on string or (char *)s pointer
- * to the first occurence of c on the string s
+ * Return: pointer to the first occurrence of the character c
+ * in the string s, or NULL if the character is not found
  */
 char *_strchr(char *s, char c)
 {
