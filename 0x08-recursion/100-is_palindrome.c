@@ -5,7 +5,7 @@ int confirm_is_palindrome(char *s, int i, int j);
 
 /**
  * _strlen_recursion - checks the length of a string
- * *s: string input
+ * @s: string input
  *
  * Return: length of the string
  *
