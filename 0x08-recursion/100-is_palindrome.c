@@ -1,6 +1,6 @@
 #include "main.h"
 
-
+int _strlen_recursion(char *s);
 int confirm_is_palindrome(char *s, int i, int j);
 
 /**
@@ -44,5 +44,5 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	return (confirm_is_palindrome(s, 0, _strlen_recursion(s) - 1));
+	return (confirm_is_palindrome(s, 0, _strlen_recursion(s)));
 }
