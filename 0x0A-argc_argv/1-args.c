@@ -7,7 +7,7 @@
  * @argv: an array of strings
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int i;
 
