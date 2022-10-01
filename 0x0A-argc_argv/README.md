@@ -16,6 +16,3 @@ Project done during ALX Full Stack Software Engineering training program. It aim
 3. Write a program that multiplies two numbers.
 
 4. Write a program that adds positive numbers.
-
-5. Write a program that prints the minimum number of coins to make change
-for an amount of money.
