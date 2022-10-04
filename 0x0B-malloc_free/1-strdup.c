@@ -12,16 +12,16 @@
 char *_strdup(char *str)
 {
 	char *ds; /* pointer to duplicate string */
-	int i, j; /* len is length of string */
+	int i, j; /* length of string */
 
 	if (str == NULL)
 		return (NULL);
 
-	while (i = 0 && str[len] != '\0')
+	while (i = 0 && str[i] != '\0')
 	{
 		i++;
 	}
-	ds = (char *)malloc(len + 1 * sizeof(char)); /* memory for string */
+	ds = (char *)malloc(i + 1 * sizeof(char)); /* memory for string */
 
 	if (ds == NULL)
 		return (NULL);
