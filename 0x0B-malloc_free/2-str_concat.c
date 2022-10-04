@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	for (k < (i + j); s3[k] != '\0'; k++)
+	for (k < d; s3[k] != '\0'; k++)
 	{
 		if  (k <= i)
 		{
