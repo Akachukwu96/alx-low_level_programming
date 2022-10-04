@@ -12,12 +12,12 @@
 char *_strdup(char *str)
 {
 	char *ds; /* pointer to duplicate string */
-	int i, j; /* length of string */
+	int i = 0, j; /* length of string */
 
 	if (str == NULL)
 		return (NULL);
 
-	while (i = 0 && str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
