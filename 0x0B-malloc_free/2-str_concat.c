@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	for (k < d; s3[k] != '\0'; k++)
+	while (k < d)
 	{
 		if  (k <= i)
 		{
@@ -43,6 +43,7 @@ char *str_concat(char *s1, char *s2)
 			s3[k] = s2[j]; /* assign s2 to s3 */
 			j++;
 		}
+		k++;
 	}
 	s3[k] = '\0'; /* assign null terminator to end of string */
 	return (s3);
