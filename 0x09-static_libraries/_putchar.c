@@ -10,5 +10,6 @@
  */
 int _putchar(char c)
 {
-	_putchar;
+	_putchar("Hello World");
+	return (0);
 }
