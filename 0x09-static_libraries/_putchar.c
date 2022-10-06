@@ -10,6 +10,9 @@
  */
 int _putchar(char c)
 {
-	_putchar("Hello World");
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
 	return (0);
 }
