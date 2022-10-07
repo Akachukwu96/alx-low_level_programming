@@ -1,8 +1,8 @@
-#C - Argc, Argv
+# C - Argc, Argv
 
 Project done during ALX Full Stack Software Engineering training program. It aims to learn about how to use arguments passed to a program.
 
-##Technologies
+## Technologies
 
 . C files are compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89.
 
