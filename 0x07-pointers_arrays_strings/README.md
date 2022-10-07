@@ -1,6 +1,8 @@
-0x07. C - Even more pointers, arrays and strings
+## 0x07. C - Even more pointers, arrays and strings
 
-Tasks
+## Technologies
+* Files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+## Tasks
 
 0. memset - Write a function that fills memory with a constant byte with
 Prototype: char *_memset(char *s, char b, unsigned int n).
