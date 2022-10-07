@@ -1,6 +1,6 @@
 # More functions, more nested loops
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about nested loops in **C language**.
+Project done during **Full Stack Software Engineering studies** at **ALX**. It aims to learn about nested loops in **C language**.
 
 ## Technologies
 * Files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
