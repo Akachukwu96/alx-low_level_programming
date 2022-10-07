@@ -11,3 +11,11 @@ Prototype: char *_memcpy(char *dest, char *src, unsigned int n.
 2. strchr - Write a function that locates a character in a string with
 Prototype: char *_strchr(char *s, char c).
 
+3. strspn - Write a function that gets the length of a prefix substring with
+Prototype: unsigned int _strspn(char *s, char *accept).
+
+4. strpbrk - Write a function that searches a string for any of a set of bytes with
+Prototype: char *_strpbrk(char *s, char *accept).
+
+5. strstr - Write a function that locates a substring with
+Prototype: char *_strstr(char *haystack, char *needle).
