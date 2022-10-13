@@ -12,9 +12,12 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int s;
+	int s;
+	int *ar;
 
-	if (array && action)
-		for (s = 0; s < size; s++)
-			action(array[s]);
+	for (s = 0; s < size; s++)
+		ar[s];
+
+	if (ar && action)
+		action(ar[s]);
 }
