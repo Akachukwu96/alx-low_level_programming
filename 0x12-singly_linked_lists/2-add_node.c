@@ -22,13 +22,13 @@ list_t *add_node(list_t **head, const char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 		count++;
-	
-	target->str = strdup(str); /* duplicating str */
+
 	target->len = i;
+	target->str = strdup(str); /* duplicating str */
 
 	target->next = *head; /* linking new node to address of first node */
 	*head = target; /* linking head to new node */
-	return (*head);
+	return (target);
 }
 
 
