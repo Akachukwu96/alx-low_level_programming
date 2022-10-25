@@ -9,7 +9,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *target; /* declaring pointer to new node */
-	int i, count = 0;
+	size_t i, count = 0;
 
 	if (head == NULL)
 		return (NULL);
