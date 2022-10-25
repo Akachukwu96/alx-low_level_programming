@@ -8,25 +8,27 @@
   */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *target;
+	list_t *target; /* declaring pointer to new node */
+	int i, count = 0;
 
 	if (head == NULL)
 		return (NULL);
 
 	target = malloc(sizeof(list_t));
+	/* creating memory for new node */
+
 	if (target == NULL)
 		return (NULL);
 
-	while (target != NULL)
-	{
-		target->str = strdup(str);
-		target->len;
-		target->next = NULL;
+	for (i = 0; str[i] != '\0'; i++)
+		count++;
+	target->str = strdup(str); /* duplicating str */
+	target->len = i;
+	target->next = NULL;
 
-		target->next = *head;
-		*head = target;
-		return (*head);
-	}
+	target->next = *head; /* linking new node to address of first node */
+	*head = target; /* linking head to new node */
+	return (*head);
 }
 
 
