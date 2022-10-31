@@ -13,7 +13,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	/* declare a pointer to new_dog and variables for string length */
 	dog_t *rubby_dog;
-	int namel = 0, ownerl, k;
+	int namel, ownerl, k;
 
 	/* create space for new_dog */
 	rubby_dog = malloc(sizeof(*rubby_dog));
@@ -24,12 +24,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	while (name[namel] != '\0')
-		namel++;
+	for (namel = 0; name[namel]; namel++)
+		;
 
 	for (ownerl = 0; owner[ownerl]; ownerl++)
 		;
-	/* Line 24 same as 27 if you initialize variable to 0 use 24 else 27 */
 
 	/* create apace for name and owner to store a copy of each */
 	rubby_dog->name = malloc(namel + 1);
