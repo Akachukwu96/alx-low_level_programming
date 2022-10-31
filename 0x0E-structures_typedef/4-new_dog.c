@@ -6,7 +6,7 @@
   * new_dog - creates a new dog
   * @name: name of the dog
   * @age: age of the dog
-  * @owner: name of the owner
+  * @owner: owner of the dog
   * Return: dog_t
   */
 dog_t *new_dog(char *name, float age, char *owner)
