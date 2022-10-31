@@ -34,19 +34,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	rubby_dog->name = malloc(namel * sizeof(rubby_dog->name));
 	rubby_dog->owner = malloc(ownerl * sizeof(rubby_dog->owner));
 
-	if (rubby_dog->name == NULL)
+	if (!(rubby_dog->name) || !(rubby_dog->owner))
 		free(rubby_dog->name);
-		free(rubby_dog);
-		return (NULL);
-
-	if (!rubby_dog->owner)
 		free(rubby_dog->owner);
 		free(rubby_dog);
 		return (NULL);
-	/* line 33 is the same as 38 checking if its NULL */
 
 	/* copy string to new string tranversing with k */
-	for (k = 0; k <= namel; k++)
+	for (k = 0; k < namel; k++)
 		rubby_dog->name[k] = name[k];
 	rubby_dog->name[k] = '\0';
 
