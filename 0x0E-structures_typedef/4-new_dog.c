@@ -7,7 +7,8 @@
   * @name: name of the dog
   * @age: age of the dog
   * @owner: owner of the dog
-  * Return: dog_t
+  * Return: struct dog
+  * if fails, returns NULL
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -17,7 +18,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	/* create space for new_dog */
 	rubby_dog = malloc(sizeof(*rubby_dog));
-
 	if (rubby_dog == NULL || !(name) || !(owner))
 	{
 		free(rubby_dog);
@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (ownerl = 0; owner[ownerl]; ownerl++)
 		;
 
-	/* create apace for name and owner to store a copy of each */
+	/* create space for name and owner to store a copy of each */
 	rubby_dog->name = malloc(namel + 1);
 	rubby_dog->owner = malloc(ownerl + 1);
 
