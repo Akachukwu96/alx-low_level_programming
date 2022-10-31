@@ -19,8 +19,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	rubby_dog = malloc(sizeof(*rubby_dog));
 
 	if (rubby_dog == NULL || !(name) || !(owner))
+	{
 		free(rubby_dog);
 		return (NULL);
+	}
 
 	while (name[namel] != '\0')
 		namel++;
@@ -30,14 +32,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/* Line 24 same as 27 if you initialize variable to 0 use 24 else 27 */
 
 	/* create apace for name and owner to store a copy of each */
-	rubby_dog->name = malloc(namel * sizeof(rubby_dog->name));
-	rubby_dog->owner = malloc(ownerl * sizeof(rubby_dog->owner));
+	rubby_dog->name = malloc(namel + 1);
+	rubby_dog->owner = malloc(ownerl + 1);
 
 	if (!(rubby_dog->name) || !(rubby_dog->owner))
+	{
 		free(rubby_dog->name);
 		free(rubby_dog->owner);
 		free(rubby_dog);
 		return (NULL);
+	}
 
 	/* copy string to new string tranversing with k */
 	for (k = 0; k < namel; k++)
@@ -46,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	rubby_dog->age = age;
 
-	for (k = 0; k <= ownerl; k++)
+	for (k = 0; k < ownerl; k++)
 		rubby_dog->owner[k] = owner[k];
 	rubby_dog->owner[k] = '\0';
 
