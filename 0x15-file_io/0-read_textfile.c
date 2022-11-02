@@ -15,6 +15,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t read_count; /* stores the read return value */
 	ssize_t write_count; /* stores the value to be written */
 
+	if (!filename)
+		return (0);
+
 	fd = open(filename, O_RDONLY); /* file opened in read only mode */
 
 	if (fd == -1)
