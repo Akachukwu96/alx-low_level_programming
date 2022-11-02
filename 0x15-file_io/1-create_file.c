@@ -10,11 +10,12 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int clen, rw_only;
+	int clen; /* length of the string to write */
+	int write_count; /* value of cou written */
 
 	if (!filename)
 		return (-1);
-	fd = open(filename,  O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (fd == -1)
 		return (-1);
@@ -22,12 +23,11 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	for (clen = 0; filename[clen]; clen++)
+	for (clen = 0; text_content[clen]; clen++)
 		;
+	write_count = write(fd, text_content, clen);
 
-	rw_only = write(fd, text_content, clen);
-
-	if (rw_only == -1)
+	if (write_count == -1)
 		return (-1);
 
 	close(fd);
