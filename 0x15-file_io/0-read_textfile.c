@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buffer; /* stores the characters read */
 	int fd; /* file descriptor */
 	ssize_t read_count; /* stores the read return value */
-	ssize_t write_count; /* stores the value to be written */
+	ssize_t write_count; /* stores the write return value */
 
 	if (!filename || letters == 0)
 		return (0);
