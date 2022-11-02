@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	int clen; /* length of the string to write */
-	int write_count; /* value of cou written */
+	int write_count; /* stores the write return value */
 
 	if (!filename)
 		return (-1);
