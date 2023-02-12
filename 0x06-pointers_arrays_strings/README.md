@@ -1,5 +1,14 @@
 # C - More pointers, arrays and strings
 
+Project done during **Full Stack Software Engineering studies** at **ALX**. It aims to learn about pointers and arrays in **C language**.
+
+## Technologies
+* Files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+
+## Files
+All of the following files are programs written in C.
+
+
 ## Tasks
 0. strcat - Write a function that concatenates two strings with
 Prototype: char *_strcat(char *dest, char *src).
