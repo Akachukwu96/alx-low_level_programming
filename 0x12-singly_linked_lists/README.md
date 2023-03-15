@@ -5,5 +5,11 @@
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc
 using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 
-## Tasks
+### Prerequisites
+* User defined data type
+	* `struct`
+	* `typdef`
+* Dynamic Memory allocation
+	* `malloc`
+	* `free`
 
